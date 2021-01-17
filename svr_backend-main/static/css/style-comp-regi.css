@@ -1,0 +1,208 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    max-width: 100%;
+   background: #d7d6d9;
+   /*font-family:Tahoma;*/
+   font-family: 'Raleway', sans-serif; 
+}
+.box1{
+    width: 1400px;
+    height: 1000px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+
+
+.image img{
+    margin-top: 140px;
+    margin-left: 500px;
+}
+
+.box {
+    width: 910px;
+    height: 800px;
+    padding: 40px;
+    position: absolute;
+    left: 210px;
+    background: #d7d6d9;
+    text-align: left;
+    transition: 0.25s;
+    margin-top: 80px;
+    border: 4px solid  #7658ac;
+    border-radius: 8px;
+    box-shadow:10px 10px 10px 10px rgba(0,0,0,.4);
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="number"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    /*display: block;*/
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #7658ac;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box p{
+    color: white;
+}
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #028b7d;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    /*background: none;*/
+    /*display: block;*/
+    margin: 20px auto;
+   /* text-align: center;*/
+    border: 2px solid #028b7d;
+    padding: 14px 40px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    background-color:#028b7d;
+
+}
+
+.box input[type="submit"]:hover {
+    background: #7658ac;
+    background-color: #7658ac;
+    color: #333;
+    border-color: #7658ac;
+}
+
+
+.forgot {
+    text-decoration: underline
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+.box2
+{
+  position: absolute;
+  top:120px;
+  right: 730px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 40%;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 10px;
+  outline: none;
+  color:  #028b7d;
+  border-radius: 24px;
+  transition: 0.25s
+}
+
+.box3 {
+    width: 370px;
+    height: 520px;
+    padding: 40px;
+    position: absolute;
+    left: 200px;
+    background: #d7d6d9;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 40px;
+    border: 4px solid  #7658ac;
+    border-radius: 8px;
+    box-shadow:10px 10px 10px 10px rgba(0,0,0,.4);
+}
+
+.image1 img{
+    margin-top:60px;
+     margin-left:-350px;
+      box-sizing: border-box;
+}
+
+.login input {
+    margin: 10px 0;
+  }
+
+/*.box4{
+    box-sizing: border-box;
+    margin-bottom:33px;
+    /*margin-right: 610px;*/
+}
+.navbar {
+    width: 100%;
+    background-color:  #d7d6d9;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #7658ac;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #028b7d;
+  }
+  
+  .active {
+    background-color: #028b7d;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  
+  
+  
+  
+

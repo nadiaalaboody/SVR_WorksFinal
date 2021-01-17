@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Post</title>
+    <link rel="stylesheet" href="../static/css/stylepost.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<html>
+<body>
+    <div class="box1">
+        <header>
+            <div class="navbar">
+                <a href="/"><i
+                        class="fa fa-fw fa-home"></i> Home</a>
+                <a href="/opportunities"><i
+                        class="fa fa-fw fa-envelope"></i> Opportunities</a>
+                <a href="/login"><i
+                        class="fa fa-fw fa-user"></i>
+                    Login</a>
+                <a class="active" href="/logout"><i
+                    class="fa fa-fw fa-user"></i> Logout</a>
+                <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                <div style="float: right;">
+                    <a href="#">
+                        <h3> SVR</h3>
+                    </a>
+                </div>
+            </div>
+        </header>
+            <div class="image1">
+                <img src="/static/img/Mobile note list-pana.png" alt="" width="250px"
+                    height="420px">
+            </div>
+            <form action="/post" method="POST" class="box">
+                <h4 style="color:#028b7d;">Post an opportunity to help our young individuals:</h4>
+                <div class="imformation" style="float: left;">
+                    <input type="text" name="companyname" class="form-control" placeholder="Comapny Name" required>
+                    <input type="text" name="opname" class="form-control" placeholder="Position Name" required>
+                    <input type="date" name="daterequired" class="form-control" placeholder="dd-mm-yyyy" required>
+                    <input type="text" name="description" class="form-control" placeholder="Description" required>
+                    <input type="text" name="skillsgained" class="form-control" placeholder="Skills Gained" required>
+                </div>
+                <div class="card" style="float: right;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Category</h4>
+                        <h5 style="color:  #028b7d;">Please select all that applies</h5>
+                        <hr class="mb-30">    <input type="checkbox" name="category" value="Information Technology" > Information Technology<br>
+                        <input type="checkbox" name="category" value="Environment"> Environment<br>
+                        <input type="checkbox" name="category" value="Education & Learning" > Education & Learning<br>
+                        <input type="checkbox" name="category" value="Health & Social Care"> Health & Social Care<br>
+                        <input type="checkbox" name="category" value="Animals"> Animals<br>
+                        <input type="checkbox" name="category" value="Miscellaneous" > Miscellaneous<br>
+                    </div>
+                </div>
+                <input type="submit" name="" value="Submit" href="#"
+                style="color: #333;box-sizing: border-box; margin-top: 360px;margin-right:-5px; ">
+    </div>
+    </form>
+    <div class="image2">
+        <img src="/static/img/At the office-amico (1).png" alt="" width="230px"
+            height="420px">
+    </div>
+    </div>
+</body>
+
+</html>

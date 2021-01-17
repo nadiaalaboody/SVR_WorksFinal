@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        login for volunteers
+    </title>
+    <link rel="stylesheet" href="../static/css/style-login-vouln.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main-content">
+        <section>
+            <div class="box1">
+                <header>
+                    <div class="navbar">
+                        <a href="/"><i
+                                class="fa fa-fw fa-home"></i> Home</a>
+                        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                        <div style="float: right;">
+                            <a href="#">
+                                <h3> SVR</h3>
+                            </a>
+                        </div>
+                </header>
+                <div class="image1">
+                    <img src="/static/img/My password-pana (1).png" alt="" width="160px"
+                    height="450px">
+                </div>
+            </div>
+            <form action="/login" method="POST" class="box">
+                <h1>Login</h1>
+                <p class="text-muted"> Please enter your login and password!</p>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="User name" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="form-group">
+                <label for="users">Account type::</label>
+                <select name="accounts" id="accounts">
+                  <option value="volunteer">Volunteer</option>
+                  <option value="institution">Institution</option>
+                </select>            
+            </div>
+            <input type="submit" name="" value="Login">
+            <a class="forgot text-muted" href="#">Forget password?</a>
+            <div class="box4">
+                <i class="fa fa-twitter-square" style="font-size:30px;color:#028b7d"></i>
+                <i class="fa fa-facebook-square" style="font-size:30px;color:#028b7d"></i>
+                <i class="fa fa-snapchat-square" style="font-size:30px;color:#028b7d"></i>
+            </div>
+            <div class="image2">
+                <img src="/static/img/My password-pana (1).png" alt="" width="200px"
+                    height="450px">
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>opportunities</title>
+    <link rel="stylesheet" href="../static/scc/style-opperat-student.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+</head>
+<html>
+
+<body>
+    <div class="main-content">
+        <section>
+            <div class="box1">
+                <header>
+                    <div class="navbar">
+                        <a href="/"><i
+                                class="fa fa-fw fa-home"></i> Home</a>
+                        <a class="active" href="/logout"><i
+                                class="fa fa-fw fa-user"></i> Logout</a>
+                        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                        <div style="float: right;">
+                            <a href="#">
+                                <h3> SVR</h3>
+                            </a>
+                        </div>
+                </header>
+
+                <form class="box" style=" width: 1000px;">
+
+                    <h2 style="color: #028b7d;">Here is shown all opportunities.</h2>
+                    <table class="w3-table" style="  width: 100%;margin-top: 40px;height: 35%;" id="table">
+                        <tr style="color: #7658ac; border: solid;">
+                            <th>Opportunity name</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Date Required</th>
+                            <th>Skills Gained</th>
+                            <th>Host</th>
+                        </tr>
+                        {% for row in rows %}
+                        <tr>
+                            <td style="color: #028b7d;"><p>{{ row['opname'] }}</p></td>
+                            <td style="color:#2a5551;"> <p>{{ row['opcategory'] }}</p></td>
+                            <td style="color:#2a5551;"><p>{{ row['description'] }}</p></td>
+                            <td style="color:#2a5551;"><p>{{ row['daterequired'] }}</p></td>
+                            <td style="color:#2a5551;"> <p>{{ row['skillsgained'] }}</p> </td>
+                            <td style="color:#2a5551;"><p>{{ row['companyname'] }}</p></td>
+                            <td><button onclick="openModal()"><a href="#" style="border:2px solid #028b7d;">Apply </a></button></td>
+                            <td style="color:#2a5551; display: none;"><p>{{ row['email'] }}</p></td>
+                            <td style="color:#2a5551; display: none;"><p>{{ row['phone'] }}</p></td>
+                        </tr>
+                        {%endfor%}
+                    </table>
+            </div>
+        </form>
+        </section>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <p id="rowemail"> </p>
+                <p id="rowphone"> </p>
+              </div>
+            </div>
+          </div>
+    <script>
+        function openModal()
+        {
+            console.log(this)
+            var modal = document.getElementById("id01")
+            modal.style.display = "block"
+        }
+        function addRowHandlers() {
+    var table = document.getElementById("table");
+    var rows = table.getElementsByTagName("tr");
+    for (i = 0; i < rows.length; i++) {
+        var currentRow = table.rows[i];
+        var createClickHandler = 
+            function(row) 
+            {
+                return function() { 
+                                    console.log(row.getElementsByTagName("td")[7])
+                                    var rowemail = row.getElementsByTagName("td")[7].innerHtml.innerText;
+                                    document.getElementById("rowemail").innerText = rowemail
+                                    document.getElementById("id01").style.display = "block"
+                                 };
+            };
+
+        currentRow.onclick = createClickHandler(currentRow);
+    }
+}
+window.onload = addRowHandlers();
+    </script>
+</body>
+</html>
+
